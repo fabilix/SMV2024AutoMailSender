@@ -3,7 +3,8 @@
 ## Instructions
 
 1. Place the `openhelpers.xlsx` file (from Helfereinsatz.ch) in the root directory.
-2. Run `main.py`.
+2. Create a `.env` file in the root directory and add the following line: EMAIL_PASSWORD="your_password"
+3. Run `main.py`.
 
 ## Configuration Settings
 
