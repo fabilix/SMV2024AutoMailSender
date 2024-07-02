@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Email Template</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+            }
+            .header img {
+                margin-right: 10px;
+            }
+            .contact-info {
+                margin-top: 10px;
+            }
+            .smv-logo {
+                width: 110px;
+                height: auto;
+            }
+            .group-logo {
+                width: 150px;
+                height: auto;
+            }
+            .highlight {
+                font-weight: bold;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hallo $name</p>
+        <p>Bereits in rund 2 Monaten findet die SMV‘24 in Zuchwil statt und wir benötigen unbedingt deine Hilfe. Wir haben festgestellt, dass du deinen Sollwert an Helferstunden noch nicht erreicht hast (<span class="highlight">$ist / $soll Stunden</span>).<br><br>
+        Wir bitten dich zu prüfen ob du weitere Helfereinsätze leisten kannst. Wir zählen auf deine Unterstützung für eine erfolgreiche Durchführung der SMV‘24.</p>
+        <p>Link Helfertool: <a href="https://portal.helfereinsatz.ch/smv2024">https://portal.helfereinsatz.ch/smv2024</a></p>
+        <p>$greetings</p>
+        <p class="contact-info">
+            <b>SMV 2024 - Zuchwil</b><br>
+            Website: <a href="http://www.smv2024.ch">www.smv2024.ch</a><br>
+            Mail: <a href="mailto:personal@smv2024.ch">personal@smv2024.ch</a>
+        </p>
+        <div class="header">
+            <img src="$smv_logo_url" alt="SMV Logo" class="smv-logo">
+            <img src="$group_logo" alt="Group Logo" class="group-logo">
+        </div>
+    </body>
+</html>
